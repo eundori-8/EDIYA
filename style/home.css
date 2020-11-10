@@ -1,0 +1,125 @@
+/* 공통 홈 */
+
+/* 공통 추천음료 */
+.ediya-recommend-container{
+  background-color: #fff;
+}
+.ediya-recommend{
+  background-color: #bae5fb;
+  text-align: center;
+  color: #14182c;
+}
+/* home 이디야 추천 메뉴 영문 텍스트 */
+.ediya-recommend-text[lang="en"] {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin:0;
+  
+}
+.ediya-recommend-text{
+  font-size: 1.4rem;
+}
+.ediya-recommend-text .point-color{
+  /* display: block; */
+  font-size: 3.1rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #24388d;
+}
+
+.ediya-recommend-list{
+  /* border-top:2px solid red; */
+  position: relative;
+}
+.ediya-recommend-beverage{
+  position: absolute;
+}
+
+.go-menu{
+  border:1px solid #24388d;
+  display: inline-block;
+  padding: 8px 24px;
+  color: #24388d;
+  font-weight: 700;
+  font-size: 1.4rem;
+  position:relative;
+
+}
+
+@media all and (max-width:768px){
+  /* 모바일 홈 */
+
+  /* 모바일 추천음료 */
+  .ediya-recommend-container{
+    padding-bottom:165px;
+    font-size:20px;
+  }
+  .ediya-recommend{
+    padding:2.625em 0 1.25em;
+  }
+  .ediya-recommend-text .point-color{
+    display:block;
+  }
+  .ediya-recommend-text{
+    margin: 15px 0;
+  }
+  .ediya-recommend-beverage:first-child{
+    display: none;
+  }
+  .ediya-recommend-beverage:last-child{
+    position: absolute;
+    width: 60%;
+    max-width:225px;
+    max-height:160px;
+    top:35px;
+    left:50%;
+    transform: translateX(-60%);
+    /* background-color: yellow; */
+  }
+}
+@media all and (min-width:768px){
+  /* 데스크탑 홈 */
+
+  
+}
+
+@media all and (min-width:768px) and (max-width:1020px){
+/* 데스트탑 추천음료 */
+.ediya-recommend-list{
+  width:740px;
+  margin:0 auto;
+}
+.ediya-recommend-beverage:first-child{
+  top: -60px;
+  left:50%;
+  transform:translateX(-120%);
+  width:200px;
+  /* background-color: yellow; */
+}
+.ediya-recommend-beverage:last-child{
+  top: -30px;
+  left:50%;
+  transform:translateX(25%);
+  width:300px;
+  /* background-color: pink; */
+}
+}
+
+@media all and (min-width:1020px){
+  .ediya-recommend-list{
+    width:1020px;
+    margin:0 auto;
+  }
+  .ediya-recommend-beverage:first-child{
+    top: -107px;
+    left: 60px;
+    width:306px;
+    /* background-color: yellow; */
+  }
+  .ediya-recommend-beverage:last-child{
+    top: -45px;
+    right:0;
+    width:457px;
+    /* background-color: pink; */
+  }
+}
