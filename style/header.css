@@ -1,12 +1,54 @@
 /* 공통 헤더 */
+.app-header-container{
+  background-color: #fff;
+}
 .app-header{
   display:flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items : center;
+}
+.brand {
+  margin:0;
+  width:140px;
+  /* height: 14px; */
+}
+.brand a{
+  display: block;
+  font-size:14px;
+  line-height:1;
+  padding:18px;
+}
+
+.is-open-menu{
+  width: 50px;
+  height: 50px;
+  padding:18px 16px;
+  background-color: transparent;
+}
+
+.is-open-menu .ir{
+  display:block;
+  width: 100%;
+  height: 100%;
+  background: url(./../images/button-navigation.svg) no-repeat 0 0 / cover;
 }
 
 /* 모바일 헤더 */
 @media all and (max-width:768px){
+  .brand{
+    /* background-color: yellow; */
+    width: 37.333333333333335%;  /* 140 / 375 * 100% */
+    /* height: auto; */
+    min-width: 172px;
+    max-width: 212px;
+  }
+
+  /* .is-open-menu{
+    align-self: stretch;
+    height:auto;
+  } */
+  
   .app-navigation{
     position: fixed;
     top:0;
@@ -20,8 +62,24 @@
 
 /* 데스크탑 헤더 */
 @media all and (min-width:768px){
+  .app-header{
+    /* background-color: pink; */
+    width:762px;
+    margin:0 auto;
+  }
+  .brand{
+    height:50px;
+  }
   .is-open-menu, .is-close-menu {
     display:none;
+  }
+  .app-navigation ul{
+    display:flex;
+    flex-flow:row nowrap;
+    padding:18px 0;
+  }
+  .app-navigation li{
+    margin: 0 4px;
   }
 }
 
