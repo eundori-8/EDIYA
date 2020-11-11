@@ -126,6 +126,45 @@
   background: transparent;
   padding: 0;
 }
+.ediya-news {
+  position: relative;
+  background-color: #24388d;
+  color: #fefefe;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+.ediya-news-headline {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+.ediya-news-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 5px;
+  /* background-color: brown; */
+}
+
+.ediya-news-subject {
+  flex-grow: 1;
+  margin-right: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* background-color: green; */
+}
+.ediya-news-date {
+  min-width: 62px;
+  font-size: 1.2rem;
+}
+.ediya-news .icon-more {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+}
+
 @media all and (max-width:768px){
   /* 모바일 홈 */
 
@@ -160,7 +199,20 @@
 @media all and (min-width:768px){
   /* 데스크탑 홈 */
 
-  
+ /* 데스크탑 섹션컨테이너 */
+ .ediya-section-container{
+   background-color:#f5f5f5;
+   padding:62px 0 54px 0;
+
+ }
+
+  /* 데스크탑 뉴스 */
+  .ediya-notice-headline{
+    padding-top:10px;
+  }
+  .ediya-news{
+    padding-top:10px;
+  }
 }
 
 @media all and (min-width:768px) and (max-width:1020px){
